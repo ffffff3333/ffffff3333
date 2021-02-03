@@ -1,0 +1,293 @@
+@font-face 
+	font-family: "Nunito" 
+	src: url(/fonts/Nunito-Regular.ttf)                                    
+	font-weight: normal
+	font-style: normal
+
+*
+	font-family: 'Nunito' , sans-serif
+
+
+a
+	text-decoration: none !important
+
+.hamburger
+	display: none
+	div
+		height: 5px
+		width: 35px
+		background-color: white
+		border-radius: 5px
+		margin-top: 5px
+
+.main_menu
+	display: flex
+	justify-content: space-between
+.logo
+	margin-top: 30px
+	vertical-align: middle
+	margin-bottom: 10px
+	&_img
+		width: 160px
+		height: 52px
+
+.submenu
+	font-family: 'Nunito' sans-serif
+	width: 400px
+	display: flex
+	align-items: center
+	justify-content: space-around
+	&__link
+		&:hover
+			border-bottom: 1px solid #08c
+		&:last-child
+			text-decoration: none
+			color: red
+			border-bottom: 1.2px dotted red
+
+.number_block
+	display: flex
+	align-items: center	
+.number
+	color: #036ca0
+	font-weight: 700
+	font-family: 'Nunito' sans-serif
+	font-size: 26px
+	text-decoration: none
+	transition: 0.7s all
+	&:hover
+		color: #0088cc
+		text-decoration: none
+		border-bottom: none
+.subheader
+	background-color: rgb(0, 136, 204)
+	width: 100%
+	&__menu
+		height: 80px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__link
+		padding: 10px 10px 10px
+		font-weight: 700
+		text-transform: uppercase
+		color: white
+		&:hover
+			background-color: white
+			border-radius: 5px
+			padding: 10px 10px 10px
+			color: rgb(0, 136, 204)
+.feedback
+	font-family: 'Nunito' , sans-serif
+	font-weight: 700
+	margin-left: 80px
+	height: 35px
+	width: 150px
+	background-color: white
+	transition: all linear 0.2s
+	outline: none
+	border-radius: 5px
+	border: 0px
+	color: rgb(0, 136, 204)
+	&:hover
+		background-color:#2bb8ff
+		color: white
+	&:active
+		outline: none
+	&:focus
+		outline: none
+		
+.intro
+	border-bottom: 0.5px solid grey
+	min-height: 700px
+	width: 100%
+	background: #252849 linear-gradient(0deg, #d9f4ff 103px, #007dbb 0, #252849 100%, transparent)
+	&__title
+		padding-top: 100px
+		color: white
+		font-size: 38px
+	&__advantages
+		color: white
+	&__feedback
+		&_number
+			border: none
+			outline: none
+			height:  37px
+			width: 188px
+			border-radius: 5px
+		&_call-me
+			border: none
+			outline: none
+			width: 169px
+			height:  37px
+			border-radius: 5px
+			color: #08c
+			font-size: 16px
+			font-weight: 700
+			border-left: 2px solid #08c
+			transition: .1s all
+			&:hover
+				background-color: #08c
+				color: white
+				outline: none
+				border: 0px
+			&:focus
+				outline: none
+				border: 0px
+	&__blocks
+		margin-top: 80px
+		display: flex
+		justify-content: space-between
+	&__information
+		// width: 100%
+		margin: 10px 
+		border-radius: 10px
+		background-color: #0088cc
+		box-shadow: 0 14px 14px 0 rgba(0,0,0,0.5)
+		padding: 40px 51px 34px
+		transition: 0.2s all
+		
+		&:hover
+			background-color: #2bb8ff
+		&:focus
+			background-color: #2bb8ff
+		&_title
+			text-transform: uppercase
+			font-size: 22px
+			color: white
+			margin-bottom: 45px
+		&_text
+			color: white
+
+.tarif
+	min-height: 750px
+	background-color: #d9f4ff
+	padding-bottom: 67px
+	padding-top: 40px
+	position: relative
+	&__backgorund_img
+		width: 716px
+		height: 308px
+		position: absolute
+		left: -200px
+		bottom: 0px
+	&__for-you
+		
+		color: #0279b6
+		font-size: 36px
+		font-weight: bold
+		line-height: 48px
+	&__title
+		color: #525252
+		font-size: 37px
+		font-weight: bold
+	&__blocks
+		// width: 300px
+		margin-top: 40px
+		margin: 40 auto
+		display: flex
+		justify-content: space-between
+		&__information
+			margin: 0 auto
+			background-color: white
+			border-radius: 5px
+			box-shadow: 0 0 10px rgba(0,0,0,0.5)
+			padding: 25px 14px
+	&__advantages
+		margin-top: 10px
+		list-style: none
+		list-style: none
+		padding-right: 10px
+		&::before
+			padding-right: 5px
+			content: '✔'
+	&__feedback
+		margin-top: 20px
+		display: flex
+		justify-content: space-around
+		align-items: center
+		&_plug
+			outline: none
+			border: none
+			width: 120px
+			height: 35px
+			padding: 6px 12px
+			background: #0279b6
+			color: #fff
+			border-radius: 5px
+			&:focus
+				background-color:	#2bb8ff
+				outline: none
+				border: 0px
+			&:hover
+				background-color:	#2bb8ff
+				outline: none
+				border: 0px
+		&_img
+			height: 50px
+			width: 50px
+		
+
+.tarif__blocks__infromation_title
+	font-size: 17px
+	font-weight: 700
+	color: #115484
+	margin-bottom: 15px
+	text-transform: uppercase
+
+.price__block
+	width: 250px
+	display: flex
+	justify-content: space-around
+	padding-bottom: 5px
+	border-bottom: 1px solid #0279b6
+.price
+	font-size: 20px
+	display: inline-block
+	&__number
+		font-size: 26px
+.time
+	
+	display: inline-block
+.deadline
+	display: inline-block
+
+
+.banner
+	margin-top: 40px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-left: auto
+	height: 100px
+	max-width: 730px
+	background-color: #0279b6
+	border-radius: 10px
+	&__first
+		padding-top: 15px
+		padding-left: 10px
+	&__call-me
+		margin-right: 10px
+		color: white
+		padding-bottom: 5px
+		border-bottom: 1px solid white
+		&:hover
+			color: white
+			outline: none
+			border: 0px
+		&:focus
+			
+	.big_text
+		min-font-size: 26px
+		margin-bottom: 0px
+		font-weight: bold
+		color: white
+	.small_text
+		margin-bottom: 0 px
+		font-size: 15px
+		color: white
+	.best_price
+		img
+			height: 100px
+			width: 100px
+@import _media.sass
